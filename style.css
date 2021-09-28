@@ -1,0 +1,314 @@
+/* main reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* define main background-color and main font-family */
+  color: #ffffff;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.container {
+  /* Define container specifications */
+  max-width: 1200px;
+  margin: auto;
+  justify-content: center;
+  background-color: #e9ecef;
+  z-index: -1;
+}
+.main-header {
+  /* main header definitions, used for all pages */
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / -1;
+  height: 70px;
+  letter-spacing: -1px;
+  border-radius: 0 0 5px 5px;
+  background-color: #0ca678;
+  padding: 5px 20px 5px 20px;
+  align-items: center;
+}
+
+/* formatting header icons */
+.social {
+  display: inline-flex;
+}
+/* formatting header icons size */
+.social-media {
+  width: 30px;
+  height: 30px;
+}
+
+/*hover animations header icons definition */
+.social-media:hover,
+.social-media:active {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  transform: scale(130%, 130%);
+  border: 0.1px solid #fff;
+  border-radius: 20%;
+  box-shadow: 0 10px 10px 0.07px rgba(0, 0, 0, 0.2);
+}
+
+/* define main image position */
+.main-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+/* formatting main image */
+.image {
+  box-shadow: 0 0 10px rgb(88, 88, 88);
+  width: 250px;
+  height: 250px;
+  border-width: 5px;
+  padding: 3px;
+  border: double 1px #087f5b;
+  border-radius: 20%;
+  margin: -30px 0 100px 0;
+}
+
+/* define and formatting main text box */
+.personal-description {
+  width: 70%;
+  align-items: center;
+  text-align: justify;
+  justify-items: center;
+  background-color: #0ca678;
+  margin: 0 auto 200px auto;
+  padding: 40px 60px 40px 60px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+/* define position of the gifs */
+.skill {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  column-gap: 20px;
+  margin: 0 0 350px 0;
+  text-align: center;
+}
+
+/* fomatting text box behing images */
+.Main-Qualifications-Text,
+.Professional-Career-text {
+  width: 350px;
+  height: 350px;
+  border-radius: 12px 12px 12px 12px;
+  z-index: 0;
+  color: #000;
+  font-size: 30px;
+  color: #fff;
+  padding-top: 150px;
+  background-color: #099268;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* formatting gifs */
+.description-img {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  z-index: 1;
+  border-radius: 12px 12px 12px 12px;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+
+/* define hover animations, hide gifs and show text box */
+.description-img:hover {
+  transition: 0.5s ease-in-out;
+  border: double 1px #373a3d;
+  box-shadow: 0 0 10px rgb(88, 88, 88);
+  opacity: 0.1;
+}
+
+nav {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+nav a:link {
+  color: #099268;
+  margin: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* formatting text box for Professional-Career.html */
+.jobs {
+  display: block;
+  margin: 100px auto 100px auto;
+  width: 50%;
+}
+/* formatting text box for Main-Qualifications.html */
+.qualification {
+  width: 70%;
+  align-items: center;
+  text-align: justify;
+  justify-items: center;
+  background-color: #0ca678;
+  margin: 200px auto 200px auto;
+  padding: 40px 60px 40px 60px;
+  border-radius: 12px;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+/* footer definitions, used for all pages */
+footer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 5px 0 0;
+  font-size: 22px;
+  font-family: Arial, sans-serif;
+  background-color: #0ca678;
+  color: #e9ecef;
+  padding: 20px 20px 20px 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.whatsapp {
+  color: #e9ecef;
+  margin-right: 3px;
+  width: 20px;
+  height: 20px;
+}
+.contact {
+  font-size: 16px;
+  display: flex;
+  color: #e9ecef;
+}
+.mail {
+  margin-right: 3px;
+  width: 20px;
+  height: 20px;
+}
+.phone {
+  display: flex;
+  color: #e9ecef;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  margin: 3px 0 3px 0;
+  font-size: 16px;
+}
+h5 {
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: square;
+}
+
+/* responsive format for touch devices */
+@media (max-width: 768px) {
+  .container {
+    max-width: 760px;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-header {
+    display: block;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    height: 130px;
+    text-align: center;
+  }
+  .navigation-btn {
+    display: block;
+  }
+
+  .skill {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .description-img {
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .personal-description {
+    width: 95%;
+    text-align: center;
+    padding: 30px 20px 30px 20px;
+    margin-bottom: 100px;
+    font-size: 16px;
+  }
+  .jobs {
+    margin: 10px auto 10px auto;
+    width: 100%;
+  }
+  .Main-Qualifications-Text,
+  .Professional-Career-text {
+    margin-top: 350px;
+    height: 50px;
+    padding-top: 5px;
+    border-radius: 0 0 12px 12px;
+    z-index: -1;
+  }
+  .description-img {
+    margin-bottom: 30px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .qualification {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 97%;
+    padding: 30px 30px 30px 30px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 1025px) {
+  .social-media {
+    opacity: 0.3;
+  }
+}
+
+/* resposive format for tablet device */
+@media (max-width: 1025px) {
+  .Main-Qualifications-Text,
+  .Professional-Career-text {
+    margin-top: 350px;
+    height: 50px;
+    padding-top: 5px;
+    border-radius: 0 0 12px 12px;
+    z-index: -1;
+  }
+  .description-img {
+    margin-bottom: 30px;
+    border-radius: 12px 12px 0 0;
+  }
+  .container {
+    /* Define container max size for tablet device */
+    max-width: 1025px;
+  }
+  .qualification {
+    width: 95%;
+  }
+}
